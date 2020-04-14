@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- type as below:
+ ************************************************************************************************
+  standard form: 
+	      <field name="" key="" index="" type="" dim="" column="" value="min:max"/>
+  type:  
+    index  note             string  value        
+	1,     int:                int      1
+	2,     unsigned int:       uint     2
+    3,     long long           long     3
+	4,     float:              float    4
+	5,     string:             string   5
+	6,     int vec, dim:       veci     6
+    7,     uint vec, dim:      vecu     7
+    8,     long long vec, dim: vecl     8
+	9,     string vec, dim:    vecs     9
+
+note; 1, index is from 1, which can be not continous, and default +1 from above.
+      2, must has unique key
+      3, vec type(6, 9), its dim should [1, 4].
+	  4, column is csv field name.
+	  5, value is for digital filed value check(min:max)
+**************************************************************************************************
+
+-->
+
+<database version="2">
+	<table name="Attributes" csv_table="attributes.csv"> <!--attributes.csv-->>
+		<field name="id" type="uint" index = "1" key="1" column="id"/>
+		<field name="health" type="int" column="health" value="0:"/>
+		<field name="mana" type="int" column="mana" value="0:"/>
+		<field name="health_regen" type="int" column="health_regen" value="0:"/>
+		<field name="mana_regen" type="int" column="mana_regen" value="0:"/>
+		<field name="physical_attack" type="int" column="physical_attack" value="0:"/>
+		<field name="magical_attack" type="int" column="magical_attack" value="0:"/>
+		<field name="physical_defense" type="int" column="physical_defense" value="0:"/>
+		<field name="magical_defense" type="int" column="magical_defense" value="0:"/>
+		<field name="physical_crit" type="int" column="physical_crit" value="0:"/>
+		<field name="magical_crit" type="int" column="magical_crit" value="0:"/>
+		<field name="physical_crit_damage" type="int" column="physical_crit_damage" value="0:"/>
+		<field name="magical_crit_damage" type="int" column="magical_crit_damage" value="0:"/>
+		<field name="physical_penetration" type="int" column="physical_penetration" value="0:"/>
+		<field name="magical_penetration" type="int" column="magical_penetration" value="0:"/>
+		<field name="physical_lifesteal" type="int" column="physical_lifesteal" value="0:"/>
+		<field name="magical_lifesteal" type="uint" column="magical_lifesteal" value="0:"/>
+		<field name="attack_speed" type="int" column="attack_speed" value="0:"/>
+		<field name="speed" type="int" column="max_forwardspeed" value="0:"/>
+	</table>
+	
+</database>
