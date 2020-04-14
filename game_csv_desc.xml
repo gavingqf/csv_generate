@@ -30,9 +30,9 @@ note; 1, index is from 1, which can be not continous, and default +1 from above.
 		<field name="health" type="int" column="health" value="0:"/>
 		<field name="mana" type="int" column="mana" value="0:"/>
 		<field name="health_regen" type="int" column="health_regen" value="0:"/>
-		<field name="mana_regen" type="int" column="mana_regen" value="0:"/>
-		<field name="physical_attack" type="int" column="physical_attack" value="0:"/>
-		<field name="magical_attack" type="int" column="magical_attack" value="0:"/>
+		<field name="mana_regen" type="uint" column="mana_regen" value="0:"/>
+		<field name="physical_attack" type="long" column="physical_attack" value="0:"/>
+		<field name="magical_attack" type="string" column="magical_attack" value="0:"/>
 		<field name="physical_defense" type="int" column="physical_defense" value="0:"/>
 		<field name="magical_defense" type="int" column="magical_defense" value="0:"/>
 		<field name="physical_crit" type="int" column="physical_crit" value="0:"/>
